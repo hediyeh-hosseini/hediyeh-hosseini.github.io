@@ -1,0 +1,102 @@
+nav ul{
+list-style-type: none;
+padding: 1.5em;
+margin: auto;
+background-color: lightblue;
+}
+nav ul li{
+padding:1;
+margin: 3px 0 0;
+padding: 10px 1em;
+text-align: center;
+border: 5px solid red;
+background-color:#e6ffff;
+
+
+}
+nav ul lia{
+text-decoration: none;
+font-size: 1.8em;
+font: sans-serif;
+display:block;
+
+}
+
+@media only screen and (min-width:
+45em){
+nav ul{
+text-align: center;
+}
+nav ul li{
+display: inline-block;
+
+text-align: center;
+width: 20%;
+}
+main{
+clear: left;
+}
+}
+
+
+/* box-sizing default value is content-box */
+
+*, *:before, *:after {
+moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+body { margin: 0; text-align: justify; font: sans-serif;}
+main, footer, header { position: relative; margin: .5em;}
+section, aside, footer, header { border: 1px solid #ccc; padding: 1.25em; border-radius: 5px;}
+caption{
+	caption-side: top;
+}
+
+section{
+	margin-bottom: 0.5em;
+	
+	}
+	
+img{
+	float: left;
+	margin-right: 20px;
+}
+
+header h1{
+	text-shadow: 2px 2px #ff0000;
+}
+header{
+	text-align: right;
+	background-image: url("welcome.png");
+	background-repeat: no-repeat;
+	background-size: 1300px 170px;
+}
+
+header h2{
+	padding-top:0;
+}
+
+footer{
+	text-align: center;
+	background-color: #c0c0c0;
+	
+}
+aside h4{
+	font-size: 1.5em;
+}
+@media only screen and (min-width:45em){
+	section { margin-right: 19.5em; }
+	
+	
+	aside#Transportation {position: absolute; top:0; right:0; width: 18.75em;border: 5px solid red;}
+	aside#What{position: absolute; top: 8.5em; right:0; width: 18.75em;border: 5px solid red;}
+	aside#Restaurants {position: absolute; top: 17.5em; right:0; width: 18.75em;border: 5px solid red;}
+	aside#Table {position: absolute; top:0; right:0; width: 18.75em; text-align: center}
+	aside#inn {position: absolute; top:0; right:0; width: 18.75em;}
+	aside#gallery {position: absolute; top:0; right:0; width: 18.75em;}
+}
+textarea{
+	width: 50%;
+	border: 5px solid red;
+}

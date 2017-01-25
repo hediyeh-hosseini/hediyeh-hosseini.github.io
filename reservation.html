@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Reservation</title>
+<link rel="stylesheet" href="case.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $( "#checkIn" ).datepicker();
+   $( "#checkOut" ).datepicker();
+});
+</script>
+</head>
+	<body>
+	
+		<header>
+			<h1>Cougar Inn</h1>
+			<h3>Feel Home!</h3>
+		</header>
+			<nav>
+				<ul>
+					<li><a href="index.html">About Us</a></li>
+					<li><a href="college.html">Columbia College</a></li>
+					<li><a href="around.html">Around Columbia</a></li>
+					<li><a href="reservation.html">Reservation</a></li>
+					<li><a href="feedback.php">Feedback</a></li>
+					<li><a href="directions.html">Directions</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		<main>
+		<section id ="reservation">
+				<h1>Reservation</h1>
+				&nbsp; <p>Please enter the following information to reserve your room. 
+				After you click on submit button, you should receive a confirmation
+				number. You will need the confirmation number to make change or
+				delete the reservation.</p>
+
+				<img alt = "room" src="room.jpg" height="100">
+				<img alt = "room2" src="room2.jpg" height="100">
+				<br>
+				<p> Manager <a href="login2.php">login</a></p>
+				<form name = "reservation" action="confirmation.php" method="post">
+				<br>
+				<br>
+				<p>
+				<label>Please Enter your name:
+				<input id="name" type = "text" size = "30" maxlength = "40" autofocus = "autofocus" required = "required" 
+				pattern = "^[A-Z][a-zA-Z ' - .]+$" placeholder= "Example: John Smith"></label></p>	
+				<p>
+				
+		<label>Check In Date: <input name= "checkIn" id="checkIn" type="text"></label>
+		</p>
+		<p>
+	<label>Check Out Date:<input name= "checkOut"id="checkOut" type="text"></label>
+</p>
+		<label>Room type:
+				<select name= "room" size ="1">
+					<option value = 'Standard Smoking'>Standard Smoking</option>
+					<option value = 'Standard Non-smoking'>Standard Non-smoking</option>
+					<option value = 'Double Smoking'>Double Smoking</option>
+					<option value = 'Double Non-smoking'>Double Non-smoking</option> 
+				</select>
+				</label>
+</p>
+<p>
+<input type = "submit" name = "submit" value = "Submit" />
+</p>
+<p>
+<input type = "submit" name = "change" value = "Change a reservation" />
+<input type = "submit" name = "delete" value = "Delete a reservation" />
+</p>
+
+</form>
+			<aside id="gallery">
+		
+			<img alt = "photo gallery" src="room.jpg" height="200" width= "270">
+			<p>
+			<img alt = "photo gallery" src="room2.jpg" height="200" width= "270"></p>
+		
+			</aside>
+</main>
+
+		<footer>
+			<p>&copy; Hediyeh Hosseini LLC 2016</p>
+		</footer>
+
+</body>
+
+</html>
